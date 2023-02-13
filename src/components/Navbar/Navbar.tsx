@@ -1,14 +1,14 @@
-import styles from '@/styles/Navbar.module.scss';
+import style from './style.module.scss';
 import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className={styles.header}>
-      <h2 className={styles.logo}>
+    <header className={style.header}>
+      <h2 className={style.logo}>
         <b>Developer</b> portfolio
       </h2>
 
-      <nav className={styles.nav}>
+      <nav className={style.nav}>
         <Link href='#projects'>Projects</Link>
         <Link href='#skills'>Skills</Link>
         <Link href='#contacts'>Contacts</Link>

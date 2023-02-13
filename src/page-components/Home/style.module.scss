@@ -1,0 +1,59 @@
+
+.welcomeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  
+  background-color: #171718;
+  background-image: url('/images/Abstract.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 630px 630px;
+  
+  .text {
+    font-weight: 700;
+    line-height: 7rem;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FAFAFA;
+    
+    &1 {
+      font-size: 7.5rem;
+
+      span {
+        color: #5C62EC;
+      }
+    }
+
+    &2 {
+      font-size: 5rem;
+    }
+
+    &3 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 3rem;
+      letter-spacing: 0.5px;
+
+      margin-top: 20px;
+    }
+  }
+
+  .downloadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3.5rem;
+    margin-top: 40px;
+    
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    background: #5C62EC;
+    border-radius: 5px;
+  }
+}
