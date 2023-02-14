@@ -1,0 +1,95 @@
+[
+  {
+    "id": "0",
+    "title": "Paint Online",
+    "description": "Paint Online is a web application that allows you to draw with other people in real time! When you enter the site, it generates a room for you. You just copy the URL and send it to your friend. That's it! Now you can draw together!",
+    "thumbnailUrl": "/images/projects/p1.png",
+    "features": [
+      "Live drawing!",
+      "Room generation",
+      "Different tools for drawing",
+      "Undo and redo",
+      "Saving your masterpieces"
+    ],
+    "technologies": [
+      "HTML canvas",
+      "React JS",
+      "Typescript",
+      "MobX",
+      "Chakra UI",
+      "WebSocket",
+      "Express JS"
+    ],
+    "repositoryUrl": "https://paint-online-kirillgoryakin.vercel.app/",
+    "demoUrl": "https://github.com/KirillGoryakin/Paint-Online/"
+  },
+  {
+    "id": "1",
+    "title": "CloneTube",
+    "description": "CloneTube basically is just a YouTube clone made with NextJS. No auth, no liking and commenting. Just watching.",
+    "thumbnailUrl": "/images/projects/p2.png",
+    "features": [
+      "Server Side Rendering with NextJS",
+      "Responsive design",
+      "Framer-motion animations",
+      "SCSS",
+      "Infinite scroll"
+    ],
+    "technologies": [
+      "React JS",
+      "Next JS",
+      "Typescript",
+      "Framer-motion",
+      "ESLint"
+    ],
+    "repositoryUrl": "https://github.com/KirillGoryakin/CloneTube-nextjs/",
+    "demoUrl": "https://clone-tube.vercel.app/"
+  },
+  {
+    "id": "2",
+    "title": "Chat Up",
+    "description": "This is a simple chat application with authorization via email or Google. It uses Firebase as backend.",
+    "thumbnailUrl": "/images/projects/p3.png",
+    "features": [
+      "Live chatting!",
+      "Email + password authorization",
+      "Google authorization",
+      "People searching",
+      "Framer Motion animations"
+    ],
+    "technologies": [
+      "React JS",
+      "Typescript",
+      "Redux",
+      "Chakra UI",
+      "Firebase"
+    ],
+    "repositoryUrl": "https://github.com/KirillGoryakin/Chat-Up/",
+    "demoUrl": "https://chat-up-kirillgoryakin.vercel.app/"
+  },
+  {
+    "id": "3",
+    "title": "Review App",
+    "description": "This is a React project that can store your movies or series Reviews. Basically, this is just like a playlist or a notepad for movies and series. Each Review contains: title, description, date, score, image, folder and tags. All the Reviews store in localStorage. They can be edited and deleted easily.",
+    "thumbnailUrl": "/images/projects/p4.png",
+    "features": [
+      "Searching, filtering and sorting",
+      "Tag and folder system",
+      "Translation support",
+      "Searching images by title",
+      "Responsive design"
+    ],
+    "technologies": [
+      "React JS",
+      "Typescript",
+      "Redux ToolKit",
+      "Redux Persist",
+      "Rest API",
+      "Material UI",
+      "Jest",
+      "Cypress"
+    ],
+    "repositoryUrl": "https://github.com/KirillGoryakin/ReviewApp-react/",
+    "demoUrl": "https://review-app-react.vercel.app/"
+  }
+]

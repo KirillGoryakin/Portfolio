@@ -1,3 +1,4 @@
+@import '../../../styles/variables.scss';
 
 .welcomeSection {
   display: flex;
@@ -23,7 +24,7 @@
       font-size: 7.5rem;
 
       span {
-        color: #5C62EC;
+        color: $purple;
       }
     }
 
@@ -53,7 +54,7 @@
     line-height: 24px;
     letter-spacing: 0.15px;
     color: #FFFFFF;
-    background: #5C62EC;
+    background: $purple;
     border-radius: 5px;
   }
 }
