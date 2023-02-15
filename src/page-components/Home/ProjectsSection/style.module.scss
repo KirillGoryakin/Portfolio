@@ -1,21 +1,5 @@
-@import '../../../styles/variables.scss';
 
 .projectsSection {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 70px 0;
-  
-  .title {
-    font-size: 7.5rem;
-    font-weight: 700;
-    line-height: 10rem;
-    text-align: center;
-    letter-spacing: -0.5px;
-    color: $purple;
-
-    margin-bottom: 7.5rem;
-  }
-
   .projects {
     display: flex;
     justify-content: flex-start;

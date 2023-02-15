@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.sectionTitle {
+  font-size: 7.5rem;
+  font-weight: 700;
+  line-height: 10rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: $purple;
+
+  margin-bottom: 7.5rem;
+}
