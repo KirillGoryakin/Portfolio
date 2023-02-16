@@ -17,8 +17,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         className={style.thumbnail}
         src={project.thumbnailUrl}
         alt='Thumbnail'
-        width={370}
-        height={280}
+        width={865}
+        height={650}
       />
 
       <div className={style.projectTitle}>

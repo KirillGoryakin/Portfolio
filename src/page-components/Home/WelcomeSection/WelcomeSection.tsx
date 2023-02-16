@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button';
 import style from './style.module.scss';
 
 const WelcomeSection = () => {
@@ -13,13 +14,16 @@ const WelcomeSection = () => {
         with passion for learning and creating.
       </div>
 
-      <a
+      <Button
+        type='link'
         className={style.downloadCV}
         href='/pdf/cv.pdf'
-        download='KirillGoryakin-CV.pdf'
+        buttonProps={{
+          download: 'KirillGoryakin-CV.pdf',
+        }}
       >
         Download CV
-      </a>
+      </Button>
     </section>
   );
 };

@@ -1,0 +1,113 @@
+@import '../variables.scss';
+
+.projectSection {
+  width: 865px;
+  margin: 0 auto;
+  
+  .thumbnail {
+    display: block;
+    width: 865px;
+    height: 650px;
+    margin: 0 auto 5rem;
+
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .description {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    color: #171718;
+
+    margin-bottom: 2.5rem;
+  }
+
+  .lists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .features, .technologies {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    color: #171718;
+    
+    & > h5 {
+      font-size: 4rem;
+      color: $purple;
+
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: disc;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+
+  .demoButton {
+    gap: 1.2rem;
+
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+      
+      span {
+        color: #ffffff;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 3rem;
+      height: 3rem;
+  
+      background: url('/images/visit.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+    }
+  }
+
+  .repositoryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: transparent;
+    transition: background 0.2s ease-in-out;
+
+    &:hover { background: #ffffff; }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 3rem;
+      height: 3rem;
+
+      background: url('/images/github.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 3.5rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  background: $purple;
+  border-radius: 5px;
+}

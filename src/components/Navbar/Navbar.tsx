@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <header className={style.header}>
       <h2 className={style.logo}>
-        <b>Developer</b> portfolio
+        <Link href='/'>
+          <b>Developer</b> portfolio
+        </Link>
       </h2>
 
       <nav className={style.nav}>
