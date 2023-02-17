@@ -13,4 +13,13 @@
   color: #FFFFFF;
   background: $purple;
   border-radius: 5px;
+  transition: opacity 0.2s ease-in-out;
+  
+  &:hover {
+    opacity: 0.8;
+
+    span {
+      color: #ffffff;
+    }
+  }
 }

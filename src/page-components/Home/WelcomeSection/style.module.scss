@@ -46,3 +46,34 @@
     margin-top: 5rem;
   }
 }
+
+
+@media (max-width: 767px) {
+  .welcomeSection {
+    gap: 2rem;
+    padding: 0 2rem;
+
+    background-size: 400px 400px;
+
+    .text {
+      &1 {
+        font-size: 6.5rem
+      }
+
+      &2 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+
+      &3 {
+        font-size: 1.8rem;
+
+        margin-top: 0;
+      }
+    }
+
+    .downloadCV {
+      margin-top: 0;
+    }
+  }
+}

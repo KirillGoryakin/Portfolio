@@ -5,3 +5,15 @@
   margin: 0 auto;
   padding: 70px 0;
 }
+
+@media (max-width: 1200px) {
+  .section {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    max-width: 100%;
+  }
+}

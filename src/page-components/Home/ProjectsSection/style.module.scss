@@ -35,3 +35,31 @@
     color: #171718;
   }
 }
+
+
+@media (max-width: 1200px) {
+  .projectsSection {
+    .projects {
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projectsSection {
+    .projects {
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    width: 100%;
+
+    .thumbnail {
+      height: auto;
+    }
+  }
+}

@@ -57,16 +57,6 @@
   .demoButton {
     gap: 1.2rem;
 
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 0.8;
-      
-      span {
-        color: #ffffff;
-      }
-    }
-
     &::before {
       content: '';
       display: block;
