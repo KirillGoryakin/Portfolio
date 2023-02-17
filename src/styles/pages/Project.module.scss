@@ -101,3 +101,40 @@
     }
   }
 }
+
+
+@media (max-width: 1200px) {
+  .projectSection {
+    .thumbnail {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projectSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .features, .technologies {
+      ul {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projectSection {
+    .lists {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .buttons {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
