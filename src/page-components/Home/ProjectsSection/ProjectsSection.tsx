@@ -7,7 +7,7 @@ import style from './style.module.scss';
 
 const ProjectsSection = () => {
   return (
-    <Section className={style.projectsSection}>
+    <Section id='projects' className={style.projectsSection}>
       <SectionTitle>Projects</SectionTitle>
 
       <div className={style.projects}>
