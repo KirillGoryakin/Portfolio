@@ -14,7 +14,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const mobileNavVatiants: Variants = {
-    hidden: { scaleY: 0 },
+    hidden: { scaleY: mobile ? 0 : 1 },
     show: { scaleY: 1 },
   };
 
