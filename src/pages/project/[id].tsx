@@ -8,6 +8,7 @@ import { SectionTitle } from '@/components/SectionTitle';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/Button';
+import Head from 'next/head';
 
 const projects = projectsJSON as Project[];
 
@@ -44,6 +45,10 @@ const ProjectPage: React.FC<Props> = ({ project }) => {
   
   return (
     <Section className={style.projectSection}>
+      <Head>
+        <title>{project ? project.title : 'Not Found'} - Kirill Goryakin</title>
+      </Head>
+      
       {!project
         ? (<SectionTitle>Not Found</SectionTitle>)
         : (<>
