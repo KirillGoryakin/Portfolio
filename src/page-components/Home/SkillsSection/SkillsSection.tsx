@@ -27,6 +27,7 @@ const SkillsSection = () => {
         <Skill src='/images/skills/bootstrap.svg'>Bootstrap</Skill>
         <Skill src='/images/skills/materialui.svg'>MaterialUI</Skill>
         <Skill src='/images/skills/chakraui.svg'>ChakraUI</Skill>
+        <Skill src='/images/skills/framer.svg'>Framer Motion</Skill>
       </div>
       <div className={style.skills}>
         <Skill src='/images/skills/graphql.svg'>GraphQL</Skill>
