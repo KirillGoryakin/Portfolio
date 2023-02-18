@@ -1,17 +1,29 @@
 @import '../../../styles/variables.scss';
 
 .welcomeSection {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 700px;
-  
+
   background-color: #171718;
-  background-image: url('/images/Abstract.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 630px 630px;
+  
+  .background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 630px;
+    height: 630px;
+    
+    background-image: url('/images/Abstract.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    z-index: 1;
+  }
   
   .text {
     font-weight: 700;
@@ -19,6 +31,7 @@
     letter-spacing: -0.5px;
     text-align: center;
     color: #FAFAFA;
+    z-index: 2;
     
     &1 {
       font-size: 7.5rem;
@@ -44,6 +57,7 @@
 
   .downloadCV {
     margin-top: 5rem;
+    z-index: 2;
   }
 }
 
@@ -53,7 +67,10 @@
     gap: 2rem;
     padding: 0 2rem;
 
-    background-size: 400px 400px;
+    .background {
+      width: 400px;
+      height: 400px;
+    }
 
     .text {
       &1 {

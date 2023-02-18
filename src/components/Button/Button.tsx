@@ -1,6 +1,5 @@
 import style from './style.module.scss';
 import Link from 'next/link';
-import { Children } from 'react';
 
 type LinkProps = {
   type: 'link';

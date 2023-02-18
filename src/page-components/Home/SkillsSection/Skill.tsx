@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 import style from './style.module.scss';
 
 type Props = {
@@ -7,8 +8,17 @@ type Props = {
 };
 
 const Skill: React.FC<Props> = ({ children, src }) => {
+  const skillVariants: Variants = {
+    hidden: { y: -100, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+  
   return (
-    <div className={style.skill}>
+    <motion.div
+      className={style.skill}
+      variants={skillVariants}
+      whileHover={{ scale: 1.1 }}
+    >
       <Image
         className={style.image}
         src={src}
@@ -18,7 +28,7 @@ const Skill: React.FC<Props> = ({ children, src }) => {
       />
 
       <div className={style.text}>{children}</div>
-    </div>
+    </motion.div>
   );
 };
 
