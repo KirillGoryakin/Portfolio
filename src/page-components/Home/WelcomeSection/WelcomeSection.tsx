@@ -43,13 +43,13 @@ const WelcomeSection = () => {
       </motion.div>
 
       <motion.div
+        className={style.downloadCV}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
       >
         <Button
           type='link'
-          className={style.downloadCV}
           href='/pdf/cv.pdf'
           buttonProps={{
             download: 'KirillGoryakin-CV.pdf',
