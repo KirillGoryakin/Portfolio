@@ -1,4 +1,5 @@
 import { Project } from '@/appTypes';
+import { useWindowSize } from '@/hooks/windowSize';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,16 +10,21 @@ type Props = {
 };
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
+  const { width } = useWindowSize();
+  const mobile = width ? width <= 480 : false;
+  
   const cardVariants: Variants = {
     hidden: { y: -100, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
+
+  const hover = !mobile ? { scale: 1.08 } : {};
   
   return (
     <motion.div
       className={style.projectCard}
       variants={cardVariants}
-      whileHover={{ scale: 1.08 }}
+      whileHover={hover}
     >
       <Link href={`/project/${project.id}`}>
         <Image
