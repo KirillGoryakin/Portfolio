@@ -3,7 +3,7 @@
 This is my portfolio site. It is written on Next JS and has Framer Motion animations.
 
 # Link
-https://portfolio-kirillgoryakin.vercel.app/
+https://kirillgoryakin.vercel.app/
 # Development
 ### Instalation:
 Clone repository:
