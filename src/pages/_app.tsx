@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div>
       <Head>
         <title>Kirill Goryakin portfolio</title>
+        <link rel='icon' type='image/x-icon' href='/images/favicon.svg' />
       </Head>
       
       <Navbar />

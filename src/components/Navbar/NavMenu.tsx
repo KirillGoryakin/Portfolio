@@ -1,5 +1,5 @@
 import { useWindowSize } from '@/hooks/windowSize';
-import { AnimateSharedLayout, motion, Variants } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import { Dispatch, SetStateAction } from 'react';
 import { NavLink } from './NavLink';
@@ -28,29 +28,27 @@ const NavMenu: React.FC<Props> = ({ open, setOpen }) => {
         animate={open ? 'show' : 'hidden'}
         transition={{ duration: 0.2 }}
       >
-        <AnimateSharedLayout>
-          <NavLink
-            href='/'
-            anchorId='projects'
-            onClick={() => setOpen(false)}
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            href='/'
-            anchorId='skills'
-            onClick={() => setOpen(false)}
-          >
-            Skills
-          </NavLink>
-          <NavLink
-            href='/'
-            anchorId='contacts'
-            onClick={() => setOpen(false)}
-          >
-            Contacts
-          </NavLink>
-        </AnimateSharedLayout>
+        <NavLink
+          href='/'
+          anchorId='projects'
+          onClick={() => setOpen(false)}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          href='/'
+          anchorId='skills'
+          onClick={() => setOpen(false)}
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          href='/'
+          anchorId='contacts'
+          onClick={() => setOpen(false)}
+        >
+          Contacts
+        </NavLink>
       </motion.nav>
 
       {mobile && (
