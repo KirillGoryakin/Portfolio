@@ -5,7 +5,7 @@ const Socials = () => {
   return (
     <div className={style.socials}>
       <Social
-        href='https://www.linkedin.com/in/kirill-goryakin-42b495265/'
+        href='https://www.linkedin.com/in/kirillgoryakin/'
         imageSrc='/images/socials/linkedin.svg'
         imageAlt='LinkedIn'
         imageWidth={38}
