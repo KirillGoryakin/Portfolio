@@ -1,0 +1,41 @@
+{
+  "Hi, my name is": {
+    "ru": "Привет, я"
+  },
+  "Kirill": {
+    "ru": "Кирилл"
+  },
+  "a frontend developer": {
+    "ru": "frontend разработчик"
+  },
+  "with passion for learning and creating": {
+    "ru": "с мотивацией к обучению и развитию"
+  },
+  "Download CV": {
+    "ru": "Скачать резюме"
+  },
+  "Projects": {
+    "ru": "Проекты"
+  },
+  "Skills": {
+    "ru": "Навыки"
+  },
+  "Other": {
+    "ru": "Другие"
+  },
+  "Contacts": {
+    "ru": "Контакты"
+  },
+  "Features": {
+    "ru": "Особенности"
+  },
+  "Technologies": {
+    "ru": "Техналогии"
+  },
+  "Demo": {
+    "ru": "Демо"
+  },
+  "GitHub repository": {
+    "ru": "GitHub репозиторий"
+  }
+}

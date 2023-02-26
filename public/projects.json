@@ -1,113 +1,241 @@
 [
   {
-    "id": "0",
-    "title": "Portfolio",
-    "description": "Just my portfolio site",
-    "thumbnailUrl": "/images/projects/portfolio.png",
-    "features": [
-      "Next JS static generation",
-      "Framer Motion animations"
-    ],
-    "technologies": [
-      "React JS",
-      "Next JS",
-      "Typescript",
-      "Framer Motion"
-    ],
-    "repositoryUrl": "https://github.com/KirillGoryakin/Portfolio",
-    "demoUrl": ""
+    "en": {
+      "id": "0",
+      "title": "Portfolio",
+      "description": "Just my portfolio site written on NextJS. It also has language translation.",
+      "thumbnailUrl": "/images/projects/portfolio.png",
+      "features": [
+        "NextJS static generation",
+        "Framer Motion animations",
+        "Translation support",
+        "Responsive design"
+      ],
+      "technologies": [
+        "React JS",
+        "Next JS",
+        "i18n",
+        "Typescript",
+        "Framer Motion"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Portfolio",
+      "demoUrl": ""
+    },
+    "ru": {
+      "id": "0",
+      "title": "Портфолио",
+      "description": "Мой сайт-портфолио, написанный на NextJS. Также имеется функция перевода на другие языки.",
+      "thumbnailUrl": "/images/projects/portfolio.png",
+      "features": [
+        "Статическая генерация с помощью NextJS",
+        "Framer Motion анимации",
+        "Переводы",
+        "Адаптивный дизайн"
+      ],
+      "technologies": [
+        "React JS",
+        "Next JS",
+        "Typescript",
+        "Framer Motion"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Portfolio",
+      "demoUrl": ""
+    }
   },
   {
-    "id": "1",
-    "title": "Paint Online",
-    "description": "Paint Online is a web application that allows you to draw with other people in real time! When you enter the site, it generates a room for you. You just copy the URL and send it to your friend. That's it! Now you can draw together!",
-    "thumbnailUrl": "/images/projects/paint-online.png",
-    "features": [
-      "Live drawing!",
-      "Room generation",
-      "Different tools for drawing",
-      "Undo and redo",
-      "Saving your masterpieces"
-    ],
-    "technologies": [
-      "HTML canvas",
-      "React JS",
-      "Typescript",
-      "MobX",
-      "Chakra UI",
-      "WebSocket",
-      "Express JS"
-    ],
-    "repositoryUrl": "https://github.com/KirillGoryakin/Paint-Online/",
-    "demoUrl": "https://paint-online-kirillgoryakin.vercel.app/"
+    "en": {
+      "id": "1",
+      "title": "Paint Online",
+      "description": "Paint Online is a web application that allows you to draw with other people in real time! When you enter the site, it generates a room for you. You just copy the URL and send it to your friend. That's it! Now you can draw together!",
+      "thumbnailUrl": "/images/projects/paint-online.png",
+      "features": [
+        "Live drawing!",
+        "Room generation",
+        "Different tools for drawing",
+        "Undo and redo",
+        "Saving your masterpieces"
+      ],
+      "technologies": [
+        "HTML canvas",
+        "React JS",
+        "Typescript",
+        "MobX",
+        "Chakra UI",
+        "WebSocket",
+        "Express JS"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Paint-Online/",
+      "demoUrl": "https://paint-online-kirillgoryakin.vercel.app/"
+    },
+    "ru": {
+      "id": "1",
+      "title": "Paint Online",
+      "description": "Веб-приложение, позволяющее вам рисовать вместе с другими людьми на одном холсте в реальном времени! При заходе на сайт генерируется комната, ссылку на которую можно отправить друзьям. Был использован протокол WebSocket для обмена данными между пользователями в комнате.",
+      "thumbnailUrl": "/images/projects/paint-online.png",
+      "features": [
+        "Рисование в реальном времени!",
+        "Генерация комнат",
+        "Различные инструменты рисования",
+        "Отмена и восстановление действий",
+        "Сохранение ваших произведений"
+      ],
+      "technologies": [
+        "HTML canvas",
+        "React JS",
+        "Typescript",
+        "MobX",
+        "Chakra UI",
+        "WebSocket",
+        "Express JS"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Paint-Online/",
+      "demoUrl": "https://paint-online-kirillgoryakin.vercel.app/"
+    }
   },
   {
-    "id": "2",
-    "title": "CloneTube",
-    "description": "CloneTube basically is just a YouTube clone made with NextJS. No auth, no liking and commenting. Just watching.",
-    "thumbnailUrl": "/images/projects/clonetube.png",
-    "features": [
-      "Server Side Rendering with NextJS",
-      "Responsive design",
-      "Framer-motion animations",
-      "SCSS",
-      "Infinite scroll"
-    ],
-    "technologies": [
-      "React JS",
-      "Next JS",
-      "Typescript",
-      "Framer-motion",
-      "ESLint"
-    ],
-    "repositoryUrl": "https://github.com/KirillGoryakin/CloneTube-nextjs/",
-    "demoUrl": "https://clone-tube.vercel.app/"
+    "en": {
+      "id": "2",
+      "title": "CloneTube",
+      "description": "ust a YouTube clone written on NextJS. YT-API was used to fetch data from real YouTube. Also has funny animations.",
+      "thumbnailUrl": "/images/projects/clonetube.png",
+      "features": [
+        "Server Side Rendering with NextJS",
+        "Responsive design",
+        "Framer-motion animations",
+        "SCSS",
+        "Infinite scroll"
+      ],
+      "technologies": [
+        "React JS",
+        "Next JS",
+        "Typescript",
+        "Framer Motion",
+        "ESLint"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/CloneTube-nextjs/",
+      "demoUrl": "https://clone-tube.vercel.app/"
+    },
+    "ru": {
+      "id": "2",
+      "title": "CloneTube",
+      "description": "Просто клон YouTube написанный на NextJS. Был использован YT-API для подгрузки данных из реального YouTube. Также присутствуют анимации.",
+      "thumbnailUrl": "/images/projects/clonetube.png",
+      "features": [
+        "Рендеринг на стороне сервера (SSR) при помощи NextJS",
+        "Адаптивный дизайн",
+        "Framer Motion анимации",
+        "SCSS",
+        "Бесконечный скролл"
+      ],
+      "technologies": [
+        "React JS",
+        "Next JS",
+        "Typescript",
+        "Framer-motion",
+        "ESLint"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/CloneTube-nextjs/",
+      "demoUrl": "https://clone-tube.vercel.app/"
+    }
   },
   {
-    "id": "3",
-    "title": "Chat Up",
-    "description": "This is a simple chat application with authorization via email or Google. It uses Firebase as backend.",
-    "thumbnailUrl": "/images/projects/chatup.png",
-    "features": [
-      "Live chatting!",
-      "Email + password authorization",
-      "Google authorization",
-      "People searching",
-      "Framer Motion animations"
-    ],
-    "technologies": [
-      "React JS",
-      "Typescript",
-      "Redux",
-      "Chakra UI",
-      "Firebase"
-    ],
-    "repositoryUrl": "https://github.com/KirillGoryakin/Chat-Up/",
-    "demoUrl": "https://chat-up-kirillgoryakin.vercel.app/"
+    "en": {
+      "id": "3",
+      "title": "Chat Up",
+      "description": "This is a simple chat application with authorization via email or Google. It uses Firebase as backend.",
+      "thumbnailUrl": "/images/projects/chatup.png",
+      "features": [
+        "Live chatting!",
+        "Email + password authorization",
+        "Google authorization",
+        "People searching",
+        "Framer Motion animations",
+        "Responsive design"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux",
+        "Chakra UI",
+        "Firebase"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Chat-Up/",
+      "demoUrl": "https://chat-up-kirillgoryakin.vercel.app/"
+    },
+    "ru": {
+      "id": "3",
+      "title": "Chat Up",
+      "description": "Это просто чат в реальном времени с функцией авторизации через email или Google аккаунт. Используется Firebase в качестве Backend'а. Имеются красивые анимации интерфейса.",
+      "thumbnailUrl": "/images/projects/chatup.png",
+      "features": [
+        "Общение в реальном времени!",
+        "Авторизация при помощи email + пароль",
+        "Авторизация при помощи Google",
+        "Поиск собеседников",
+        "Framer Motion анимации",
+        "Адаптивный дизайн"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux",
+        "Chakra UI",
+        "Firebase"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Chat-Up/",
+      "demoUrl": "https://chat-up-kirillgoryakin.vercel.app/"
+    }
   },
   {
-    "id": "4",
-    "title": "Review App",
-    "description": "This is a React project that can store your movies or series Reviews. Basically, this is just like a playlist or a notepad for movies and series. Each Review contains: title, description, date, score, image, folder and tags. All the Reviews store in localStorage. They can be edited and deleted easily.",
-    "thumbnailUrl": "/images/projects/review.png",
-    "features": [
-      "Searching, filtering and sorting",
-      "Tag and folder system",
-      "Translation support",
-      "Searching images by title",
-      "Responsive design"
-    ],
-    "technologies": [
-      "React JS",
-      "Typescript",
-      "Redux ToolKit",
-      "Redux Persist",
-      "Rest API",
-      "Material UI",
-      "Jest",
-      "Cypress"
-    ],
-    "repositoryUrl": "https://github.com/KirillGoryakin/ReviewApp-react/",
-    "demoUrl": "https://review-app-react.vercel.app/"
+    "en": {
+      "id": "4",
+      "title": "Review App",
+      "description": "An application where you can locally leave your reviews about anything (stored in localstorage). Great for those who watch a lot of movies or series and like to record their impressions from them. \nIn each review, you can write a title and description, score and even look up a picture on the Internet with title. Reviewers can have tags or a folder. You can also search, filter and sort your reviews by tags, folder or keywords. \nThis application is fully translatable, and you can switch languages with language switcher. \nAlso auto tests on Jest and Cypress were written.",
+      "thumbnailUrl": "/images/projects/review.png",
+      "features": [
+        "Searching, filtering and sorting",
+        "Tag and folder system",
+        "Translation support",
+        "Searching images by title",
+        "Responsive design"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux ToolKit",
+        "Redux Persist",
+        "Rest API",
+        "Material UI",
+        "Jest",
+        "Cypress"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/ReviewApp-react/",
+      "demoUrl": "https://review-app-react.vercel.app/"
+    },
+    "ru": {
+      "id": "4",
+      "title": "Review App",
+      "description": "Приложение, в котором можно локально оставлять рецензии о чём угодно (хранятся в localstorage). Отлично подходит для тех, кто смотрит много фильмов или сериалов и любит записывать свои впечатления от них. \nВ каждой рецензии можно написать название и описание, поставить оценку и даже найти по названию изображение в интернете. Рецензиям можно поставить теги или положить их в папку. Присутствует поиск, фильтр и сортировка рецензий по тегам, папке или ключевым словам. \nТакже есть функция перевода, имеется переключатель языков. \nНаписаны авто-тесты на Jest и Cypress.",
+      "thumbnailUrl": "/images/projects/review.png",
+      "features": [
+        "Поиск, фильтрация и сортировка",
+        "Система тегов и папок",
+        "Перевод",
+        "Поиск изображений по названию",
+        "Адаптивный дизайн"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux ToolKit",
+        "Redux Persist",
+        "Rest API",
+        "Material UI",
+        "Jest",
+        "Cypress"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/ReviewApp-react/",
+      "demoUrl": "https://review-app-react.vercel.app/"
+    }
   }
 ]

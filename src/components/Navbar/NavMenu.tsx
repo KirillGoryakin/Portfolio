@@ -1,6 +1,8 @@
 import { useWindowSize } from '@/hooks/windowSize';
+import { __ } from '@/utils/translate';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction } from 'react';
 import { NavLink } from './NavLink';
 import style from './style.module.scss';
@@ -11,6 +13,7 @@ type Props = {
 };
 
 const NavMenu: React.FC<Props> = ({ open, setOpen }) => {
+  const { locale: l } = useRouter();
   const { width } = useWindowSize();
   const mobile = width ? width <= 767 : false;
 
@@ -33,21 +36,21 @@ const NavMenu: React.FC<Props> = ({ open, setOpen }) => {
           anchorId='projects'
           onClick={() => setOpen(false)}
         >
-          Projects
+          {__('Projects', l)}
         </NavLink>
         <NavLink
           href='/'
           anchorId='skills'
           onClick={() => setOpen(false)}
         >
-          Skills
+          {__('Skills', l)}
         </NavLink>
         <NavLink
           href='/'
           anchorId='contacts'
           onClick={() => setOpen(false)}
         >
-          Contacts
+          {__('Contacts', l)}
         </NavLink>
       </motion.nav>
 

@@ -9,3 +9,5 @@ export interface Project {
   repositoryUrl?: string;
   demoUrl?: string;
 }
+
+export type Projects = { [locale: string]: Project }[];

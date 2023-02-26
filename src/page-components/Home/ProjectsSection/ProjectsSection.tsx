@@ -1,12 +1,15 @@
-import { Project } from '@/appTypes';
 import { Section } from '@/components/Section';
 import { SectionTitle } from '@/components/SectionTitle';
 import { motion, Variants } from 'framer-motion';
 import { ProjectCard } from './ProjectCard';
-import projects from '@p/projects.json';
 import style from './style.module.scss';
+import { useRouter } from 'next/router';
+import { getProjects } from '@/utils/getProjects';
+import { __ } from '@/utils/translate';
 
 const ProjectsSection = () => {
+  const { locale: l } = useRouter();
+  
   const cardListVariants: Variants = {
     hidden: {},
     visible: {
@@ -18,7 +21,7 @@ const ProjectsSection = () => {
   
   return (
     <Section id='projects' className={style.projectsSection}>
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle>{__('Projects', l)}</SectionTitle>
 
       <motion.div
         className={style.projects}
@@ -27,7 +30,7 @@ const ProjectsSection = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        {(projects as Project[]).map(project => (
+        {getProjects(l).map(project => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </motion.div>

@@ -3,8 +3,12 @@ import { SectionTitle } from '@/components/SectionTitle';
 import { Skill } from './Skill';
 import { motion, Variants } from 'framer-motion';
 import style from './style.module.scss';
+import { useRouter } from 'next/router';
+import { __ } from '@/utils/translate';
 
 const SkillsSection = () => {
+  const { locale: l } = useRouter();
+  
   const skillsVariants: Variants = {
     hidden: {},
     visible: {
@@ -16,7 +20,7 @@ const SkillsSection = () => {
   
   return (
     <Section id='skills' className={style.skillsSection}>
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>{__('Skills', l)}</SectionTitle>
       
       <motion.div
         variants={skillsVariants}
@@ -25,7 +29,7 @@ const SkillsSection = () => {
         viewport={{ once: true }}
       >
         <div className={style.title}>
-          Frontend
+          {__('Frontend', l)}
         </div>
         <div className={style.skills}>
           <Skill src='/images/skills/html.svg'>HTML</Skill>
@@ -52,7 +56,7 @@ const SkillsSection = () => {
         </div>
 
         <div className={style.title}>
-          Other
+          {__('Other', l)}
         </div>
         <div className={style.skills}>
           <Skill src='/images/skills/nodejs.svg'>NodeJS</Skill>

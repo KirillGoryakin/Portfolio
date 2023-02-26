@@ -1,11 +1,15 @@
+import { __ } from '@/utils/translate';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Socials } from './Socials';
 import style from './style.module.scss';
 
 const Footer = () => {
+  const { locale: l } = useRouter();
+  
   return (
     <footer id='contacts' className={style.footer}>
-      <div className={style.title}>Contacts</div>
+      <div className={style.title}>{__('Contacts', l)}</div>
       
       <Socials />
 

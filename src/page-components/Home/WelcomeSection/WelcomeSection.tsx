@@ -1,8 +1,12 @@
 import { Button } from '@/components/Button';
 import { motion, Variants } from 'framer-motion';
+import { __ } from '@/utils/translate';
 import style from './style.module.scss';
+import { useRouter } from 'next/router';
 
 const WelcomeSection = () => {
+  const { locale: l } = useRouter();
+  
   const variants: Variants = {
     hidden: { y: -100, opacity: 0 },
     visible: { y: 0, opacity: 1 },
@@ -27,19 +31,19 @@ const WelcomeSection = () => {
         className={`${style.text} ${style.text1}`}
         {...getAnimationProps(0.2)}
       >
-        Hi, my name is <span>Kirill</span>
+        {__('Hi, my name is', l)} <span>{__('Kirill', l)}</span>
       </motion.div>
       <motion.div
         className={`${style.text} ${style.text2}`}
         {...getAnimationProps(0.4)}
       >
-        a frontend developer
+        {__('a frontend developer', l)}
       </motion.div>
       <motion.div
         className={`${style.text} ${style.text3}`}
         {...getAnimationProps(0.6)}
       >
-        with passion for learning and creating.
+        {__('with passion for learning and creating', l)}
       </motion.div>
 
       <motion.div
@@ -55,7 +59,7 @@ const WelcomeSection = () => {
             download: 'KirillGoryakin-CV.pdf',
           }}
         >
-          Download CV
+          {__('Download CV', l)}
         </Button>
       </motion.div>
     </section>
