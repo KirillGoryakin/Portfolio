@@ -54,9 +54,10 @@ const WelcomeSection = () => {
       >
         <Button
           type='link'
-          href='/pdf/cv.pdf'
+          href={`/pdf/cv${l !== 'en' ? `_${l}` : ''}.pdf`}
           buttonProps={{
             download: 'KirillGoryakin-CV.pdf',
+            locale: false,
           }}
         >
           {__('Download CV', l)}

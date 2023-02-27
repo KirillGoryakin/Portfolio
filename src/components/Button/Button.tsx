@@ -4,19 +4,18 @@ import Link from 'next/link';
 type LinkProps = {
   type: 'link';
   href: string;
+  buttonProps?: React.ComponentProps<typeof Link> | {};
 };
 
 type ButtonProps = {
   type: 'button';
+  buttonProps?: React.ComponentProps<'button'>;
 };
 
 type Props = (LinkProps | ButtonProps) & {
   children: string;
   className?: string;
   onClick?: React.MouseEventHandler;
-  buttonProps?: {
-    [key: string]: any;
-  };
 };
 
 const Button: React.FC<Props> = (props) => {
@@ -24,7 +23,6 @@ const Button: React.FC<Props> = (props) => {
     children,
     className,
     onClick = () => {},
-    buttonProps,
   } = props;
   
   if (props.type === 'link') {
@@ -34,7 +32,7 @@ const Button: React.FC<Props> = (props) => {
         onClick={onClick}
         href={props.href}
         target='_blank'
-        {...buttonProps}
+        {...props.buttonProps}
       >
         <span>{children}</span>
       </Link>
@@ -45,7 +43,7 @@ const Button: React.FC<Props> = (props) => {
     <button
       className={`${style.button} ${className}`}
       onClick={onClick}
-      {...buttonProps}
+      {...props.buttonProps}
     >
       <span>{children}</span>
     </button>
