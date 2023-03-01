@@ -54,6 +54,7 @@ const SkillsSection = () => {
           <Skill src='/images/skills/graphql.svg'>GraphQL</Skill>
           <Skill src='/images/skills/jest.svg'>Jest</Skill>
           <Skill src='/images/skills/cypress.svg'>Cypress</Skill>
+          <Skill src='/images/skills/storybook.svg'>Storybook</Skill>
         </div>
 
         <div className={style.title}>
