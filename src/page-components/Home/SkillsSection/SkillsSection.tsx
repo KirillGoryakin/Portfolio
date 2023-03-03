@@ -34,6 +34,7 @@ const SkillsSection = () => {
         <div className={style.skills}>
           <Skill src='/images/skills/html.svg'>HTML</Skill>
           <Skill src='/images/skills/css.svg'>CSS</Skill>
+          <Skill src='/images/skills/sass.svg'>SASS / SCSS</Skill>
           <Skill src='/images/skills/js.svg'>JavaScript</Skill>
           <Skill src='/images/skills/ts.svg'>TypeScript</Skill>
         </div>
