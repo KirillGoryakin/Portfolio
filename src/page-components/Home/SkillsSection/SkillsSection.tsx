@@ -42,6 +42,7 @@ const SkillsSection = () => {
           <Skill src='/images/skills/react.svg'>ReactJS</Skill>
           <Skill src='/images/skills/next.svg'>NextJS</Skill>
           <Skill src='/images/skills/redux.svg'>Redux</Skill>
+          <Skill src='/images/skills/redux-saga.svg'>Redux Saga</Skill>
           <Skill src='/images/skills/mobx.svg'>MobX</Skill>
           <Skill src='/images/skills/react-query.svg'>Reacu Query</Skill>
         </div>
