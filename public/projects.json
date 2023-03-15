@@ -94,9 +94,55 @@
   },
   {
     "en": {
+      "id": "5",
+      "title": "Calculator Constructor",
+      "description": "It's a web application where you can assemble your own calculator from parts. All the components are reusable and have stories with Storybook. It uses Redux Saga and also has Jest tests.\n\nTo add parts just drag them to the assembly zone. There you can change their order by dragging. To remove a part just double click it.",
+      "thumbnailUrl": "/images/projects/calculator_constructor.png",
+      "features": [
+        "Drag & Drop",
+        "Storybook",
+        "Unit and integration tests"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Sass / Scss",
+        "Redux",
+        "Redux Saga",
+        "Storybook",
+        "Jest"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Calculator-constructor/",
+      "demoUrl": "https://calculator-constructor-kirillgoryakin.vercel.app/"
+    },
+    "ru": {
+      "id": "5",
+      "title": "Calculator Constructor",
+      "description": "Это веб-приложение где вы можете собрать свой собственный калькулятор из частей. Все компоненты легко могут быть переиспользованы и имеют истории в Storybook. Используется Redux Saga, так же имеются Jest тесты.\n\nЧтоы бы добавить часть калькулятора, просто перетащите её в зону сборки. В этой зоне вы можете менять части местами и удалять по двойному клику.",
+      "thumbnailUrl": "/images/projects/calculator_constructor.png",
+      "features": [
+        "Drag & Drop",
+        "Storybook",
+        "Унит и интеграционные тесты"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Sass / Scss",
+        "Redux",
+        "Redux Saga",
+        "Storybook",
+        "Jest"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/Calculator-constructor/",
+      "demoUrl": "https://calculator-constructor-kirillgoryakin.vercel.app/"
+    }
+  },
+  {
+    "en": {
       "id": "2",
       "title": "CloneTube",
-      "description": "ust a YouTube clone written on NextJS. YT-API was used to fetch data from real YouTube. Also has funny animations.",
+      "description": "Just a YouTube clone written on NextJS. YT-API was used to fetch data from real YouTube. Also has funny animations.",
       "thumbnailUrl": "/images/projects/clonetube.png",
       "features": [
         "Server Side Rendering with NextJS",
