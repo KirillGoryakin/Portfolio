@@ -96,7 +96,7 @@
     "en": {
       "id": "5",
       "title": "Calculator Constructor",
-      "description": "It's a web application where you can assemble your own calculator from parts. All the components are reusable and have stories with Storybook. It uses Redux Saga and also has Jest tests.\n\nTo add parts just drag them to the assembly zone. There you can change their order by dragging. To remove a part just double click it.",
+      "description": "(Test task) It's a web application where you can assemble your own calculator from parts. All the components are reusable and have stories with Storybook. It uses Redux Saga and also has Jest tests.\n\nTo add parts just drag them to the assembly zone. There you can change their order by dragging. To remove a part just double click it.",
       "thumbnailUrl": "/images/projects/calculator_constructor.png",
       "features": [
         "Drag & Drop",
@@ -118,7 +118,7 @@
     "ru": {
       "id": "5",
       "title": "Calculator Constructor",
-      "description": "Это веб-приложение где вы можете собрать свой собственный калькулятор из частей. Все компоненты легко могут быть переиспользованы и имеют истории в Storybook. Используется Redux Saga, так же имеются Jest тесты.\n\nЧто бы добавить часть калькулятора, просто перетащите её в зону сборки. В этой зоне вы можете менять части местами и удалять по двойному клику.",
+      "description": "(Тестовое задание) Это веб-приложение где вы можете собрать свой собственный калькулятор из частей. Все компоненты легко могут быть переиспользованы и имеют истории в Storybook. Используется Redux Saga, так же имеются Jest тесты.\n\nЧто бы добавить часть калькулятора, просто перетащите её в зону сборки. В этой зоне вы можете менять части местами и удалять по двойному клику.",
       "thumbnailUrl": "/images/projects/calculator_constructor.png",
       "features": [
         "Drag & Drop",
@@ -282,6 +282,52 @@
       ],
       "repositoryUrl": "https://github.com/KirillGoryakin/ReviewApp-react/",
       "demoUrl": "https://review-app-react.vercel.app/"
+    }
+  },
+  {
+    "en": {
+      "id": "6",
+      "title": "Deep ToDo list",
+      "description": "(Test task) It's a todo list where you can add nested todos (infinitely deep), remove them, search, filter and change their order with drag and drop. You can also import and export your project as a json file.",
+      "thumbnailUrl": "/images/projects/deep-todo-list.png",
+      "features": [
+        "Infinite nesting",
+        "Search & filtering",
+        "Import/export project",
+        "Reordering with drag & drop"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux ToolKit",
+        "Redux Persist",
+        "Material UI",
+        "Jest"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/DeepTodoList/",
+      "demoUrl": "https://todolist-tt-kirillgoryakin.vercel.app/"
+    },
+    "ru": {
+      "id": "6",
+      "title": "Deep ToDo list",
+      "description": "(Тестовое задание) Список ToDo, в котором можно создавать подзадачи (бесконечной глубины), удалять их, искать, фильтровать и менять порядок через drag & drop. Вы также можете импортировать и экспортировать ваш проект в json файл.",
+      "thumbnailUrl": "/images/projects/deep-todo-list.png",
+      "features": [
+        "Подзадачи бесконечной глубины",
+        "Поиск и фильтрация",
+        "Импорт/экспорт проектов",
+        "Перестановка при помощи drag & drop"
+      ],
+      "technologies": [
+        "React JS",
+        "Typescript",
+        "Redux ToolKit",
+        "Redux Persist",
+        "Material UI",
+        "Jest"
+      ],
+      "repositoryUrl": "https://github.com/KirillGoryakin/DeepTodoList/",
+      "demoUrl": "https://todolist-tt-kirillgoryakin.vercel.app/"
     }
   }
 ]
