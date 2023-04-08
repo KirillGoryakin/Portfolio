@@ -14,6 +14,7 @@ type ButtonProps = {
 
 type Props = (LinkProps | ButtonProps) & {
   children: string;
+  variant?: 'contained' | 'outlined';
   className?: string;
   onClick?: React.MouseEventHandler;
 };
@@ -21,14 +22,17 @@ type Props = (LinkProps | ButtonProps) & {
 const Button: React.FC<Props> = (props) => {
   const {
     children,
+    variant = 'contained',
     className,
     onClick = () => {},
   } = props;
+
+  const cls = `${style.button} ${className} ${style[variant]}`;
   
   if (props.type === 'link') {
     return (
       <Link
-        className={`${style.button} ${className}`}
+        className={cls}
         onClick={onClick}
         href={props.href}
         target='_blank'
@@ -41,7 +45,7 @@ const Button: React.FC<Props> = (props) => {
 
   return (
     <button
-      className={`${style.button} ${className}`}
+      className={cls}
       onClick={onClick}
       {...props.buttonProps}
     >

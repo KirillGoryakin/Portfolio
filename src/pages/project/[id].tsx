@@ -111,13 +111,17 @@ const ProjectPage: React.FC<Props> = ({ project }) => {
         )}
 
         {project.repositoryUrl && (
-          <Link
+          <Button
+            type='link'
+            variant='outlined'
             className={style.repositoryButton}
             href={project.repositoryUrl}
-            target='_blank'
+            buttonProps={{
+              target: '_blank',
+            }}
           >
-            <span>{__('GitHub repository', l)}</span>
-          </Link>
+            {__('GitHub repository', l)}
+          </Button>
         )}
       </motion.div>
     </Section>

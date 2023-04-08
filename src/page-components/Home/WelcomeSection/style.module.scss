@@ -55,9 +55,23 @@
     }
   }
 
-  .downloadCV {
+  .buttons {
+    display: flex;
+    gap: 2rem;
     margin-top: 5rem;
     z-index: 2;
+
+    .github::before {
+      content: '';
+      display: block;
+      width: 3rem;
+      height: 3rem;
+
+      background: url('/images/github.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+    }
   }
 }
 
@@ -89,7 +103,8 @@
       }
     }
 
-    .downloadCV {
+    .buttons {
+      flex-direction: column;
       margin-top: 0;
     }
   }

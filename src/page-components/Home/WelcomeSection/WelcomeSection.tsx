@@ -47,12 +47,13 @@ const WelcomeSection = () => {
       </motion.div>
 
       <motion.div
-        className={style.downloadCV}
+        className={style.buttons}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
       >
         <Button
+          className={style.downloadCV}
           type='link'
           href={`/pdf/cv${l !== 'en' ? `_${l}` : ''}.pdf`}
           buttonProps={{
@@ -61,6 +62,17 @@ const WelcomeSection = () => {
           }}
         >
           {__('Download CV', l)}
+        </Button>
+        <Button
+          className={style.github}
+          type='link'
+          variant='outlined'
+          href='https://github.com/KirillGoryakin/'
+          buttonProps={{
+            target: '_blank',
+          }}
+        >
+          GitHub
         </Button>
       </motion.div>
     </section>
